@@ -7,18 +7,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="../../../public/img/favicon.png">
 
 		<!-- all css here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
-        <link rel="stylesheet" href="assets/css/themify-icons.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="../../../public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../public/css/animate.css">
+        <link rel="stylesheet" href="../../../public/css/simple-line-icons.css">
+        <link rel="stylesheet" href="../../../public/css/themify-icons.css">
+        <link rel="stylesheet" href="../../../public/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../../../public/css/meanmenu.min.css">
+        <link rel="stylesheet" href="../../../public/css/style.css">
+        <link rel="stylesheet" href="../../../public/css/responsive.css">
+        <script src="../../../public/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <header class="header-area">
@@ -41,12 +41,12 @@
                                             <li><a href="#">Dirham (AED)</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><img alt="flag" src="assets/img/icon-img/en.jpg"> English  <i class="icon-arrow-down"></i></a>
+                                    <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/en.jpg"> English  <i class="icon-arrow-down"></i></a>
                                         <ul>
-                                            <li><a href="#"><img alt="flag" src="assets/img/icon-img/bl.jpg">Bangla </a></li>
-                                            <li><a href="#"><img alt="flag" src="assets/img/icon-img/ar.jpg">Arabic</a></li>
-                                            <li><a href="#"><img alt="flag" src="assets/img/icon-img/in.jpg">Hindi </a></li>
-                                            <li><a href="#"><img alt="flag" src="assets/img/icon-img/sp.jpg">Spanish</a></li>
+                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/bl.jpg">Bangla </a></li>
+                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/ar.jpg">Arabic</a></li>
+                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/in.jpg">Hindi </a></li>
+                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/sp.jpg">Spanish</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -60,7 +60,7 @@
                     <div class="row">
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5">
                             <div class="logo pt-39">
-                                <a href="index.blade.php"><img alt="" src="assets/img/logo/logo.png"></a>
+                                <a href="index.blade.php"><img alt="" src="../../../public/img/logo/logo.png"></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-7 d-none d-lg-block">
@@ -73,7 +73,7 @@
                                                     <a href="index.blade.php">home version 1</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index-2.html">home version 2</a>
+                                                    <a href="index-2.blade.php">home version 2</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -111,7 +111,7 @@
                                                 </li>
                                                 <li>
                                                     <ul>
-                                                        <li><a href="shop-page.blade.php"><img alt="" src="assets/img/banner/menu-img-4.jpg"></a></li>
+                                                        <li><a href="shop-page.blade.php"><img alt="" src="../../../public/img/banner/menu-img-4.jpg"></a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -125,7 +125,7 @@
                                                     <a href="shop-page.blade.php">shop page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-list.html">shop list</a>
+                                                    <a href="shop-list.blade.php">shop list</a>
                                                 </li>
                                                 <li>
                                                     <a href="product-details.blade.php">product details</a>
@@ -134,16 +134,16 @@
                                                     <a href="cart.blade.php">cart page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="checkout.html">checkout</a>
+                                                    <a href="checkout.blade.php">checkout</a>
                                                 </li>
                                                 <li>
-                                                    <a href="wishlist.html">wishlist</a>
+                                                    <a href="wishlist.blade.php">wishlist</a>
                                                 </li>
                                                 <li>
                                                     <a href="contact.blade.php">contact us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="my-account.html">my account</a>
+                                                    <a href="my-account.blade.php">my account</a>
                                                 </li>
                                                 <li>
                                                     <a href="login-register.blade.php">login / register</a>
@@ -197,7 +197,7 @@
                                         <ul>
                                             <li class="single-shopping-cart">
                                                 <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                                    <a href="#"><img alt="" src="../../../public/img/cart/cart-1.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="#">Dog Calcium Food </a></h4>
@@ -210,7 +210,7 @@
                                             </li>
                                             <li class="single-shopping-cart">
                                                 <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                                    <a href="#"><img alt="" src="../../../public/img/cart/cart-2.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                     <h4><a href="#">Dog Calcium Food</a></h4>
@@ -228,7 +228,7 @@
                                         </div>
                                         <div class="shopping-cart-btn">
                                             <a href="cart.blade.php">view cart</a>
-                                            <a href="checkout.html">checkout</a>
+                                            <a href="checkout.blade.php">checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +241,7 @@
                                         <li><a href="#">HOME</a>
                                             <ul>
                                                 <li><a href="index.blade.php">home version 1</a></li>
-                                                <li><a href="index-2.html">home version 2</a></li>
+                                                <li><a href="index-2.blade.php">home version 2</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">pages</a>
@@ -253,7 +253,7 @@
                                                     <a href="shop-page.blade.php">shop page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-list.html">shop list</a>
+                                                    <a href="shop-list.blade.php">shop list</a>
                                                 </li>
                                                 <li>
                                                     <a href="product-details.blade.php">product details</a>
@@ -262,16 +262,16 @@
                                                     <a href="cart.blade.php">cart page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="checkout.html">checkout</a>
+                                                    <a href="checkout.blade.php">checkout</a>
                                                 </li>
                                                 <li>
-                                                    <a href="wishlist.html">wishlist</a>
+                                                    <a href="wishlist.blade.php">wishlist</a>
                                                 </li>
                                                 <li>
                                                     <a href="contact.blade.php">contact us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="my-account.html">my account</a>
+                                                    <a href="my-account.blade.php">my account</a>
                                                 </li>
                                                 <li>
                                                     <a href="login-register.blade.php">login / register</a>
@@ -331,89 +331,161 @@
                 </div>
             </div>
         </header>
-        <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(assets/img/banner/banner-2.jpg);">
+        <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(../../../public/img/banner/banner-2.jpg);">
             <div class="container">
                 <div class="breadcrumb-content text-center">
-                    <h2>Wishlist</h2>
+                    <h2>My Account</h2>
                     <ul>
                         <li><a href="index.blade.php">home</a></li>
-                        <li class="active">Wishlist</li>
+                        <li class="active">My Account</li>
                     </ul>
                 </div>
             </div>
         </div>
-         <!-- shopping-cart-area start -->
-        <div class="cart-main-area pt-95 pb-100">
+        <!-- my account start -->
+        <div class="my-account-area pt-100 pb-70">
             <div class="container">
-                <h3 class="page-title">Your cart items</h3>
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <form action="#">
-                            <div class="table-content table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Product Name</th>
-                                            <th>Until Price</th>
-                                            <th>Qty</th>
-                                            <th>Subtotal</th>
-                                            <th>Add To Cart</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src="assets/img/cart/cart-3.jpg" alt=""></a>
-                                            </td>
-                                            <td class="product-name"><a href="#">Dry Dog Food</a></td>
-                                            <td class="product-price-cart"><span class="amount">$110.00</span></td>
-                                            <td class="product-quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="02">
+                    <div class="col-lg-12">
+                        <div class="checkout-wrapper">
+                            <div id="faq" class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><span>1</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">Edit your account information </a></h5>
+                                    </div>
+                                    <div id="my-account-1" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="billing-information-wrapper">
+                                                <div class="account-info-wrapper">
+                                                    <h4>My Account Information</h4>
+                                                    <h5>Your Personal Details</h5>
                                                 </div>
-                                            </td>
-                                            <td class="product-subtotal">$110.00</td>
-                                            <td class="product-wishlist-cart">
-                                                <a href="#">add to cart</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src="assets/img/cart/cart-4.jpg" alt=""></a>
-                                            </td>
-                                            <td class="product-name"><a href="#">Cat Buffalo Food</a></td>
-                                            <td class="product-price-cart"><span class="amount">$150.00</span></td>
-                                            <td class="product-quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="02">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <div class="billing-info">
+                                                            <label>First Name</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <div class="billing-info">
+                                                            <label>Last Name</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="billing-info">
+                                                            <label>Email Address</label>
+                                                            <input type="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <div class="billing-info">
+                                                            <label>Telephone</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6">
+                                                        <div class="billing-info">
+                                                            <label>Fax</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </td>
-                                            <td class="product-subtotal">$150.00</td>
-                                            <td class="product-wishlist-cart">
-                                                <a href="#">add to cart</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src="assets/img/cart/cart-5.jpg" alt=""></a>
-                                            </td>
-                                            <td class="product-name"><a href="#">Legacy Dog Food</a></td>
-                                            <td class="product-price-cart"><span class="amount">$170.00</span></td>
-                                            <td class="product-quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="02">
+                                                <div class="billing-back-btn">
+                                                    <div class="billing-back">
+                                                        <a href="#"><i class="ti-arrow-up"></i> back</a>
+                                                    </div>
+                                                    <div class="billing-btn">
+                                                        <button type="submit">Continue</button>
+                                                    </div>
                                                 </div>
-                                            </td>
-                                            <td class="product-subtotal">$170.00</td>
-                                            <td class="product-wishlist-cart">
-                                                <a href="#">add to cart</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><span>2</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-2">Change your password </a></h5>
+                                    </div>
+                                    <div id="my-account-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="billing-information-wrapper">
+                                                <div class="account-info-wrapper">
+                                                    <h4>Change Password</h4>
+                                                    <h5>Your Password</h5>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="billing-info">
+                                                            <label>Password</label>
+                                                            <input type="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="billing-info">
+                                                            <label>Password Confirm</label>
+                                                            <input type="password">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="billing-back-btn">
+                                                    <div class="billing-back">
+                                                        <a href="#"><i class=" ti-arrow-up"></i> back</a>
+                                                    </div>
+                                                    <div class="billing-btn">
+                                                        <button type="submit">Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><span>3</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-3">Modify your address book entries   </a></h5>
+                                    </div>
+                                    <div id="my-account-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="billing-information-wrapper">
+                                                <div class="account-info-wrapper">
+                                                    <h4>Address Book Entries</h4>
+                                                </div>
+                                                <div class="entries-wrapper">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                            <div class="entries-info text-center">
+                                                                <p>Gerald Armstrong </p>
+                                                                <p> Address will go here. </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                            <div class="entries-edit-delete text-center">
+                                                                <a class="edit" href="#">Edit</a>
+                                                                <a href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="billing-back-btn">
+                                                    <div class="billing-back">
+                                                        <a href="#"><i class="ti-arrow-up"></i> back</a>
+                                                    </div>
+                                                    <div class="billing-btn">
+                                                        <button type="submit">Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><span>4</span> <a href="wishlist.blade.php">Modify your wish list   </a></h5>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -427,7 +499,7 @@
                                 <div class="footer-info-wrapper">
                                     <div class="footer-logo">
                                         <a href="#">
-                                            <img src="assets/img/logo/logo-2.png" alt="">
+                                            <img src="../../../public/img/logo/logo-2.png" alt="">
                                         </a>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, co adipisi elit, sed eiusmod tempor incididunt ut labore et dolore</p>
@@ -488,7 +560,7 @@
                                 </div>
                                 <div class="payment-img">
                                     <a href="index.blade.php">
-                                        <img src="assets/img/icon-img/payment.png" alt="">
+                                        <img src="../../../public/img/icon-img/payment.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -513,15 +585,15 @@
 
 
 		<!-- all js here -->
-        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/elevetezoom.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="../../../public/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="../../../public/js/popper.js"></script>
+        <script src="../../../public/js/bootstrap.min.js"></script>
+        <script src="../../../public/js/jquery.counterup.min.js"></script>
+        <script src="../../../public/js/waypoints.min.js"></script>
+        <script src="../../../public/js/elevetezoom.js"></script>
+        <script src="../../../public/js/ajax-mail.js"></script>
+        <script src="../../../public/js/owl.carousel.min.js"></script>
+        <script src="../../../public/js/plugins.js"></script>
+        <script src="../../../public/js/main.js"></script>
     </body>
 </html>

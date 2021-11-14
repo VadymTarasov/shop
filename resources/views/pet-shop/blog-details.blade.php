@@ -74,7 +74,7 @@
                                                     <a href="index.blade.php">home version 1</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index-2.html">home version 2</a>
+                                                    <a href="index-2.blade.php">home version 2</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -126,7 +126,7 @@
                                                     <a href="shop-page.blade.php">shop page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-list.html">shop list</a>
+                                                    <a href="shop-list.blade.php">shop list</a>
                                                 </li>
                                                 <li>
                                                     <a href="product-details.blade.php">product details</a>
@@ -135,16 +135,16 @@
                                                     <a href="cart.blade.php">cart page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="checkout.html">checkout</a>
+                                                    <a href="checkout.blade.php">checkout</a>
                                                 </li>
                                                 <li>
-                                                    <a href="wishlist.html">wishlist</a>
+                                                    <a href="wishlist.blade.php">wishlist</a>
                                                 </li>
                                                 <li>
                                                     <a href="contact.blade.php">contact us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="my-account.html">my account</a>
+                                                    <a href="my-account.blade.php">my account</a>
                                                 </li>
                                                 <li>
                                                     <a href="login-register.blade.php">login / register</a>
@@ -229,7 +229,7 @@
                                         </div>
                                         <div class="shopping-cart-btn">
                                             <a href="cart.blade.php">view cart</a>
-                                            <a href="checkout.html">checkout</a>
+                                            <a href="checkout.blade.php">checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +242,7 @@
                                         <li><a href="#">HOME</a>
                                             <ul>
                                                 <li><a href="index.blade.php">home version 1</a></li>
-                                                <li><a href="index-2.html">home version 2</a></li>
+                                                <li><a href="index-2.blade.php">home version 2</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">pages</a>
@@ -254,7 +254,7 @@
                                                     <a href="shop-page.blade.php">shop page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-list.html">shop list</a>
+                                                    <a href="shop-list.blade.php">shop list</a>
                                                 </li>
                                                 <li>
                                                     <a href="product-details.blade.php">product details</a>
@@ -263,16 +263,16 @@
                                                     <a href="cart.blade.php">cart page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="checkout.html">checkout</a>
+                                                    <a href="checkout.blade.php">checkout</a>
                                                 </li>
                                                 <li>
-                                                    <a href="wishlist.html">wishlist</a>
+                                                    <a href="wishlist.blade.php">wishlist</a>
                                                 </li>
                                                 <li>
                                                     <a href="contact.blade.php">contact us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="my-account.html">my account</a>
+                                                    <a href="my-account.blade.php">my account</a>
                                                 </li>
                                                 <li>
                                                     <a href="login-register.blade.php">login / register</a>
