@@ -14,18 +14,18 @@ class ProductController extends Controller
     {
         $products = Product::query()->limit(3)->offset(1)->get();
 
-//        $sessionId = Session::getId();
+        $sessionId = Session::getId();
 
-//            \Cart::session($sessionId);
+            \Cart::session($sessionId);
 
-//            $cart = \Cart::getContent();
+            $cart = \Cart::getContent();
 
-//            $sum = \Cart::getTotal('price');
+            $sum = \Cart::getTotal('price');
 
         return view('pet-shop/shop-page', [
             'products' => $products,
-//            'cart' => $cart,
-//            'sum' => $sum,
+            'cart' => $cart,
+            'sum' => $sum,
         ]);
     }
 
