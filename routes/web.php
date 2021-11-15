@@ -37,6 +37,10 @@ Route::get('pet-shop/add-cart', [\App\Http\Controllers\ProductController::class,
 Route::get('pet-shop/cart', function (){
     return view('pet-shop/cart');
 })->name('pet-shop/cart');
+//подкл. страничку регистрации
+Route::get('pet-shop/my-account', [\App\Http\Controllers\ProductController::class,'profile'])
+    ->name('pet-shop/my-account')->middleware('auth');
+
 
 
 //регистрация на гл стр ларавель

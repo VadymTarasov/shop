@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="header-login same-style">
-                            <a href="login-register.blade.php"><i class="icon-user icons"></i></a>
+                            <a href="{{route('pet-shop/my-account')}}"><i class="icon-user icons"></i></a>
                         </div>
                         <div class="header-cart same-style">
                             <button class="icon-cart">
@@ -149,7 +149,7 @@
                                             <a href="my-account.html">my account</a>
                                         </li>
                                         <li>
-                                            <a href="login-register.html">login / register</a>
+                                            <a href="login-register.blade.php">login / register</a>
                                         </li>
                                     </ul>
                                 </li>

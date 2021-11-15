@@ -102,5 +102,24 @@ class ProductController extends Controller
 
         return redirect()->back();
     }
+//    тест подкл. профиля
+    public function profile()
+    {
+        $products = Product::query()->limit(3)->offset(1)->get();
+
+        $sessionId = Session::getId();
+
+        \Cart::session($sessionId);
+
+        $cart = \Cart::getContent();
+
+        $sum = \Cart::getTotal('price');
+
+        return view('pet-shop/my-account', [
+            'products' => $products,
+            'cart' => $cart,
+            'sum' => $sum,
+        ]);
+    }
 
 }
