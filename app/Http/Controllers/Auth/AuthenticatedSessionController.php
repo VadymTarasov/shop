@@ -29,7 +29,7 @@ class AuthenticatedSessionController extends Controller
         return view('pet-shop/login-register',[
             'cart' => $cart,
             'sum' => $sum
-        ]);
+        ])->with('flachMessage', 'You need to login or register at first');
     }
 
     /**
