@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 //use MongoDB\Driver\Session;
@@ -105,7 +106,7 @@ class ProductController extends Controller
 //    тест подкл. профиля
     public function profile()
     {
-        $products = Product::query()->limit(3)->offset(1)->get();
+//        $products = Product::query()->limit(3)->offset(1)->get();
 
         $sessionId = Session::getId();
 
@@ -116,7 +117,7 @@ class ProductController extends Controller
         $sum = \Cart::getTotal('price');
 
         return view('pet-shop/my-account', [
-            'products' => $products,
+//            'products' => $products,
             'cart' => $cart,
             'sum' => $sum,
         ]);
@@ -124,7 +125,9 @@ class ProductController extends Controller
     //    тест подкл. checkout
     public function checkout()
     {
-        $products = Product::query()->limit(3)->offset(1)->get();
+//        $products = Product::query()->limit(3)->offset(1)->get();
+
+        $user = Auth::user();
 
         $sessionId = Session::getId();
 
@@ -135,9 +138,10 @@ class ProductController extends Controller
         $sum = \Cart::getTotal('price');
 
         return view('pet-shop/checkout', [
-            'products' => $products,
+//            'products' => $products,
             'cart' => $cart,
             'sum' => $sum,
+            'user' => $user
         ]);
     }
 

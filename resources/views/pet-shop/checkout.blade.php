@@ -1,336 +1,15 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Marten - Pet Food eCommerce Bootstrap4 Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="../../../public/img/favicon.png">
+@extends('layouts.master')
 
-		<!-- all css here -->
-        <link rel="stylesheet" href="../../../public/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../../public/css/animate.css">
-        <link rel="stylesheet" href="../../../public/css/simple-line-icons.css">
-        <link rel="stylesheet" href="../../../public/css/themify-icons.css">
-        <link rel="stylesheet" href="../../../public/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../../../public/css/meanmenu.min.css">
-        <link rel="stylesheet" href="../../../public/css/style.css">
-        <link rel="stylesheet" href="../../../public/css/responsive.css">
-        <script src="../../../public/js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <header class="header-area">
-            <div class="header-top theme-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="welcome-area">
-                                <p>Default welcome msg! </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-12">
-                            <div class="account-curr-lang-wrap f-right">
-                                <ul>
-                                    <li class="top-hover"><a href="#">$Doller (US) <i class="icon-arrow-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">Taka (BDT)</a></li>
-                                            <li><a href="#">Riyal (SAR)</a></li>
-                                            <li><a href="#">Rupee (INR)</a></li>
-                                            <li><a href="#">Dirham (AED)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/en.jpg"> English  <i class="icon-arrow-down"></i></a>
-                                        <ul>
-                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/bl.jpg">Bangla </a></li>
-                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/ar.jpg">Arabic</a></li>
-                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/in.jpg">Hindi </a></li>
-                                            <li><a href="#"><img alt="flag" src="../../../public/img/icon-img/sp.jpg">Spanish</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-bottom transparent-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5">
-                            <div class="logo pt-39">
-                                <a href="index.blade.php"><img alt="" src="../../../public/img/logo/logo.png"></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-7 d-none d-lg-block">
-                            <div class="main-menu text-center">
-                                <nav>
-                                    <ul>
-                                        <li><a href="index.blade.php">HOME</a>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="index.blade.php">home version 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="index-2.blade.php">home version 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-position"><a href="shop-page.blade.php">Food</a>
-                                            <ul class="mega-menu">
-                                                <li>
-                                                    <ul>
-                                                        <li class="mega-menu-title">Dogs Food</li>
-                                                        <li><a href="shop-page.blade.php">Eggs</a></li>
-                                                        <li><a href="shop-page.blade.php">Carrots</a></li>
-                                                        <li><a href="shop-page.blade.php">Salmon fishs</a></li>
-                                                        <li><a href="shop-page.blade.php">Peanut Butter</a></li>
-                                                        <li><a href="shop-page.blade.php">Grapes & Raisins</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li class="mega-menu-title">Cats Food</li>
-                                                        <li><a href="shop-page.blade.php">Meat</a></li>
-                                                        <li><a href="shop-page.blade.php">Fish</a></li>
-                                                        <li><a href="shop-page.blade.php">Eggs</a></li>
-                                                        <li><a href="shop-page.blade.php">Veggies</a></li>
-                                                        <li><a href="shop-page.blade.php">Cheese</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li class="mega-menu-title">Fishs Food</li>
-                                                        <li><a href="shop-page.blade.php">Rice</a></li>
-                                                        <li><a href="shop-page.blade.php">Veggies</a></li>
-                                                        <li><a href="shop-page.blade.php">Cheese</a></li>
-                                                        <li><a href="shop-page.blade.php">wheat bran</a></li>
-                                                        <li><a href="shop-page.blade.php">Cultivation</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul>
-                                                        <li><a href="shop-page.blade.php"><img alt="" src="../../../public/img/banner/menu-img-4.jpg"></a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">PAGES</a>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="about-us.blade.php">about us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-page.blade.php">shop page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list.blade.php">shop list</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.blade.php">product details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="cart.blade.php">cart page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="checkout.blade.php">checkout</a>
-                                                </li>
-                                                <li>
-                                                    <a href="wishlist.blade.php">wishlist</a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.blade.php">contact us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="my-account.blade.php">my account</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login-register.blade.php">login / register</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog-leftsidebar.blade.php">Blog</a>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="blog.blade.php">blog page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-leftsidebar.blade.php">blog left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-details.blade.php">blog details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about-us.blade.php">ABOUT</a></li>
-                                        <li><a href="contact.blade.php">contact us</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-7">
-                            <div class="search-login-cart-wrapper">
-                                <div class="header-search same-style">
-                                    <button class="search-toggle">
-                                        <i class="icon-magnifier s-open"></i>
-                                        <i class="ti-close s-close"></i>
-                                    </button>
-                                    <div class="search-content">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search">
-                                            <button>
-                                                <i class="icon-magnifier"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="header-login same-style">
-                                    <a href="login-register.blade.php"><i class="icon-user icons"></i></a>
-                                </div>
-                                <div class="header-cart same-style">
-                                    <button class="icon-cart">
-                                        <i class="icon-handbag"></i>
-                                        <span class="count-style">02</span>
-                                    </button>
-                                    <div class="shopping-cart-content">
-                                        <ul>
-                                            <li class="single-shopping-cart">
-                                                <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="../../../public/img/cart/cart-1.jpg"></a>
-                                                </div>
-                                                <div class="shopping-cart-title">
-                                                    <h4><a href="#">Dog Calcium Food </a></h4>
-                                                    <h6>Qty: 02</h6>
-                                                    <span>$260.00</span>
-                                                </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="ti-close"></i></a>
-                                                </div>
-                                            </li>
-                                            <li class="single-shopping-cart">
-                                                <div class="shopping-cart-img">
-                                                    <a href="#"><img alt="" src="../../../public/img/cart/cart-2.jpg"></a>
-                                                </div>
-                                                <div class="shopping-cart-title">
-                                                    <h4><a href="#">Dog Calcium Food</a></h4>
-                                                    <h6>Qty: 02</h6>
-                                                    <span>$260.00</span>
-                                                </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="ti-close"></i></a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="shopping-cart-total">
-                                            <h4>Shipping : <span>$20.00</span></h4>
-                                            <h4>Total : <span class="shop-total">$260.00</span></h4>
-                                        </div>
-                                        <div class="shopping-cart-btn">
-                                            <a href="cart.blade.php">view cart</a>
-                                            <a href="checkout.blade.php">checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mobile-menu-area electro-menu d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
-                            <div class="mobile-menu">
-                                <nav id="mobile-menu-active">
-                                    <ul class="menu-overflow">
-                                        <li><a href="#">HOME</a>
-                                            <ul>
-                                                <li><a href="index.blade.php">home version 1</a></li>
-                                                <li><a href="index-2.blade.php">home version 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="about-us.blade.php">about us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-page.blade.php">shop page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list.blade.php">shop list</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.blade.php">product details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="cart.blade.php">cart page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="checkout.blade.php">checkout</a>
-                                                </li>
-                                                <li>
-                                                    <a href="wishlist.blade.php">wishlist</a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.blade.php">contact us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="my-account.blade.php">my account</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login-register.blade.php">login / register</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Food</a>
-                                            <ul>
-                                                <li><a href="#">Dogs Food</a>
-                                                    <ul>
-                                                        <li><a href="shop-page.blade.php">Grapes and Raisins</a></li>
-                                                        <li><a href="shop-page.blade.php">Carrots</a></li>
-                                                        <li><a href="shop-page.blade.php">Peanut Butter</a></li>
-                                                        <li><a href="shop-page.blade.php">Salmon fishs</a></li>
-                                                        <li><a href="shop-page.blade.php">Eggs</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Cats Food</a>
-                                                    <ul>
-                                                        <li><a href="shop-page.blade.php">Meat</a></li>
-                                                        <li><a href="shop-page.blade.php">Fish</a></li>
-                                                        <li><a href="shop-page.blade.php">Eggs</a></li>
-                                                        <li><a href="shop-page.blade.php">Veggies</a></li>
-                                                        <li><a href="shop-page.blade.php">Cheese</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Fishs Food</a>
-                                                    <ul>
-                                                        <li><a href="shop-page.blade.php">Rice</a></li>
-                                                        <li><a href="shop-page.blade.php">Veggies</a></li>
-                                                        <li><a href="shop-page.blade.php">Cheese</a></li>
-                                                        <li><a href="shop-page.blade.php">wheat bran</a></li>
-                                                        <li><a href="shop-page.blade.php">Cultivation</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">blog</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="blog.blade.php">blog page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-leftsidebar.blade.php">blog left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-details.blade.php">blog details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.blade.php"> Contact us </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+@section('title')
+    Главная страница checkout
+
+@endsection
+
+@section('styles')
+
+@endsection
+
+@section('content')
         <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(../../../public/img/banner/banner-2.jpg);">
             <div class="container">
                 <div class="breadcrumb-content text-center">
@@ -350,47 +29,7 @@
                     <div class="col-lg-9">
                         <div class="checkout-wrapper">
                             <div id="faq" class="panel-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title"><span>1</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-1">Checkout method</a></h5>
-                                    </div>
-                                    <div id="payment-1" class="panel-collapse collapse show">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="checkout-register">
-                                                        <h5 class="checkout-sub-title">great an account</h5>
-                                                        <p>Please enter your email address to create an account</p>
-                                                        <form>
-                                                            <label> Email Address </label>
-                                                            <input type="email" name="email">
-                                                            <button class="checkout-btn" type="submit">Great An Account</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="checkout-login">
-                                                        <h5 class="checkout-sub-title">login</h5>
-                                                        <form>
-                                                            <div class="login-form">
-                                                                <label> Email Address </label>
-                                                                <input type="email" name="email">
-                                                            </div>
-                                                            <div class="login-form">
-                                                                <label> Password </label>
-                                                                <input type="email" name="email">
-                                                            </div>
-                                                        </form>
-                                                        <div class="login-forget">
-                                                            <button class="checkout-btn" type="submit">Login</button>
-                                                            <a href="#">Forgot your password?</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h5 class="panel-title"><span>2</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-2">billing information</a></h5>
@@ -402,25 +41,13 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>First Name</label>
-                                                            <input type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <div class="billing-info">
-                                                            <label>Last Name</label>
-                                                            <input type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <div class="billing-info">
-                                                            <label>Company</label>
-                                                            <input type="text">
+                                                            <input type="text" value="{{$user->name}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>Email Address</label>
-                                                            <input type="email">
+                                                            <input type="email" value="{{$user->email}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12">
@@ -448,45 +75,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
-                                                        <div class="billing-select card-mrg">
-                                                            <label>Country</label>
-                                                            <select>
-                                                                <option value="1">United State</option>
-                                                                <option value="2">Azerbaijan</option>
-                                                                <option value="3">Bahamas</option>
-                                                                <option value="4">Bahrain</option>
-                                                                <option value="5">Bangladesh</option>
-                                                                <option value="6">Barbados</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>Telephone</label>
                                                             <input type="text">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <div class="billing-info">
-                                                            <label>Fax</label>
-                                                            <input type="text">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ship-wrapper">
-                                                    <div class="single-ship">
-                                                        <input type="radio" name="address" value="address" checked="">
-                                                        <label>Ship to this address</label>
-                                                    </div>
-                                                    <div class="single-ship">
-                                                        <input type="radio" name="address" value="dadress">
-                                                        <label>Ship to different address</label>
-                                                    </div>
                                                 </div>
                                                 <div class="billing-back-btn">
-                                                    <div class="billing-back">
-                                                        <a href="#"><i class="ti-arrow-up"></i> back</a>
-                                                    </div>
+
                                                     <div class="billing-btn">
                                                         <button type="submit">Get a Quote</button>
                                                     </div>
