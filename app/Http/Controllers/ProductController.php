@@ -121,5 +121,24 @@ class ProductController extends Controller
             'sum' => $sum,
         ]);
     }
+    //    тест подкл. checkout
+    public function checkout()
+    {
+        $products = Product::query()->limit(3)->offset(1)->get();
+
+        $sessionId = Session::getId();
+
+        \Cart::session($sessionId);
+
+        $cart = \Cart::getContent();
+
+        $sum = \Cart::getTotal('price');
+
+        return view('pet-shop/checkout', [
+            'products' => $products,
+            'cart' => $cart,
+            'sum' => $sum,
+        ]);
+    }
 
 }

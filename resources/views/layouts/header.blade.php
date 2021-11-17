@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="shopping-cart-btn">
                                     <a href="{{route('pet-shop/cart')}}">view cart!!!</a>
-                                    <a href="checkout.html">checkout</a>
+                                    <a href="{{route('pet-shop/checkout')}}">checkout</a>
                                 </div>
                             </div>
                         </div>
