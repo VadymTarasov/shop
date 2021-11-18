@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -148,7 +149,32 @@ class ProductController extends Controller
     }
     public function makeOrder(Request $request)
     {
-//        dd($request);
+        $user = Auth::user();
+
+        $sessionId = Session::getId();
+
+        \Cart::session($sessionId);
+
+        $cart = \Cart::getContent();
+
+        $sum = \Cart::getTotal('price');
+
+        $order = new Order();
+
+        $order->user_id = $user->id;
+
+        $order->cart_data = $order->getCartDataAttribute($cart);
+
+        $order->total_sum = $sum;
+
+        $order->address = $request->address . ' ' . $request->city .' ' . $request->post;
+
+        $order->phone =$request->phone;
+
+        $order->save();
+
+        return back();
+
 
     }
 
