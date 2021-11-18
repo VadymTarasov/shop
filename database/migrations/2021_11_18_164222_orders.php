@@ -13,7 +13,15 @@ class Orders extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('orders', function (Blueprint $table) {
+            $table->string('id')->index();
+            $table->longText('cart_data');
+            $table->float('total_sum');
+            $table->string('phone');
+            $table->timestamps();
+
+            $table->primary('id');
+        });
     }
 
     /**
