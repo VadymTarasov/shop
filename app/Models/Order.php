@@ -26,6 +26,6 @@ class Order extends Model
 
     public function getCartDataAttribute($value)
     {
-        return unserialize($value);
+//        return unserialize($value);
     }
 }
