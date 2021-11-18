@@ -44,6 +44,9 @@ Route::get('pet-shop/my-account', [\App\Http\Controllers\ProductController::clas
 Route::get('pet-shop/checkout', [\App\Http\Controllers\ProductController::class,'checkout'])
     ->name('pet-shop/checkout')->middleware('auth');
 
+Route::get('pet-shop/make-order', [\App\Http\Controllers\ProductController::class,'makeOrder'])
+    ->name('pet-shop/make-order')->middleware('auth');
+
 
 
 //регистрация на гл стр ларавель

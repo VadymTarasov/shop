@@ -135,6 +135,8 @@ class ProductController extends Controller
 
         $cart = \Cart::getContent();
 
+//        dd($cart);
+
         $sum = \Cart::getTotal('price');
 
         return view('pet-shop/checkout', [
@@ -143,6 +145,11 @@ class ProductController extends Controller
             'sum' => $sum,
             'user' => $user
         ]);
+    }
+    public function makeOrder(Request $request)
+    {
+//        dd($request);
+
     }
 
 }

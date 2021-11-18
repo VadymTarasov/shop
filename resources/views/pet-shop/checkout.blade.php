@@ -35,60 +35,117 @@
                                         <h5 class="panel-title"><span>2</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-2">billing information</a></h5>
                                     </div>
                                     <div id="payment-2" class="panel-collapse collapse">
+                                        <form method="post" action="{{route('pet-shop/make-order')}}">
+                                            @csrf
                                         <div class="panel-body">
                                             <div class="billing-information-wrapper">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>First Name</label>
-                                                            <input type="text" value="{{$user->name}}">
+                                                            <input name="name" type="text" value="{{$user->name}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>Email Address</label>
-                                                            <input type="email" value="{{$user->email}}">
+                                                            <input name="email" type="email" value="{{$user->email}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12">
                                                         <div class="billing-info">
                                                             <label>Address</label>
-                                                            <input type="text">
+                                                            <input name="address" type="text">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>city</label>
-                                                            <input type="text">
+                                                            <input name="city" type="text">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>State/Province</label>
-                                                            <input type="text">
+                                                            <input name="state" type="text">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>Zip/Postal Code</label>
-                                                            <input type="text">
+                                                            <input name="post" type="text">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="billing-info">
                                                             <label>Telephone</label>
-                                                            <input type="text">
+                                                            <input name="phone" type="text">
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-review">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="width-1">Product Name</th>
+                                                                <th class="width-2">Price</th>
+                                                                <th class="width-3">Qty</th>
+                                                                <th class="width-4">Subtotal</th>
+                                                            </tr>
+                                                            </thead>
+                                                            @foreach($cart as $item)
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="o-pro-dec">
+                                                                        <p>{{$item->name}}</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="o-pro-price">
+                                                                        <p>$ {{$item->price}}</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="o-pro-qty">
+                                                                        <p>{{$item->quantity}}</p>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="o-pro-subtotal">
+                                                                        <p>$ {{$item->price * $item->quantity}}</p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                            @endforeach
+                                                            <tfoot>
+                                                            <tr>
+                                                                <td colspan="3">Grand Total</td>
+                                                                <td colspan="1">${{$sum}}</td>
+                                                            </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <div class="billing-back-btn">
+                                                        <span>
+                                                            Forgot an Item?
+                                                            <a href="#"> Edit Your Cart.</a>
+
+                                                        </span>
+
                                                     </div>
                                                 </div>
                                                 <div class="billing-back-btn">
 
                                                     <div class="billing-btn">
-                                                        <button type="submit">Get a Quote</button>
+                                                        <button type="submit">Make an Order</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
@@ -415,110 +472,8 @@
                 </div>
             </div>
         </div>
-		<footer class="footer-area">
-            <div class="footer-top pt-80 pb-50 gray-bg-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="footer-info-wrapper">
-                                    <div class="footer-logo">
-                                        <a href="#">
-                                            <img src="../../../public/img/logo/logo-2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, co adipisi elit, sed eiusmod tempor incididunt ut labore et dolore</p>
-                                    <div class="social-icon">
-                                        <ul>
-                                            <li><a href="#"><i class="icon-social-twitter"></i></a></li>
-                                            <li><a href="#"><i class="icon-social-instagram"></i></a></li>
-                                            <li><a href="#"><i class="icon-social-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="icon-social-skype"></i></a></li>
-                                            <li><a href="#"><i class="icon-social-dribbble"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <div class="footer-widget mb-30 pl-50">
-                                <h4 class="footer-title">USEFUL LINKS</h4>
-                                <div class="footer-content">
-                                    <ul>
-                                        <li><a href="#">Help & Contact Us</a></li>
-                                        <li><a href="#">Returns & Refunds</a></li>
-                                        <li><a href="#">Online Stores</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6">
-                            <div class="footer-widget mb-30 pl-70">
-                                <h4 class="footer-title">HELP</h4>
-                                <div class="footer-content">
-                                    <ul>
-                                        <li><a href="#">Faq's </a></li>
-                                        <li><a href="#">Pricing Plans</a></li>
-                                        <li><a href="#">Order Traking</a></li>
-                                        <li><a href="#">Returns </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="footer-widget">
-                                <div class="newsletter-wrapper">
-                                    <p>Subscribe to our newsletter and get 10% off your first purchase..</p>
-                                    <div class="newsletter-style">
-                                        <div id="mc_embed_signup" class="subscribe-form">
-                                            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                                <div id="mc_embed_signup_scroll" class="mc-form">
-                                                    <input type="email" value="" name="EMAIL" class="email" placeholder="Your mail address" required>
-                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                    <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
-                                                    <div class="clear"><input type="submit" value="SEND" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="payment-img">
-                                    <a href="index.blade.php">
-                                        <img src="../../../public/img/icon-img/payment.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom gray-bg-3 pt-17 pb-15">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="copyright text-center">
-                                <p>Copyright © <a href="#">Marten.</a> All Right Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</footer>
+@endsection
 
+@section('scripts')
 
-
-
-		<!-- all js here -->
-        <script src="../../../public/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="../../../public/js/popper.js"></script>
-        <script src="../../../public/js/bootstrap.min.js"></script>
-        <script src="../../../public/js/jquery.counterup.min.js"></script>
-        <script src="../../../public/js/waypoints.min.js"></script>
-        <script src="../../../public/js/elevetezoom.js"></script>
-        <script src="../../../public/js/ajax-mail.js"></script>
-        <script src="../../../public/js/owl.carousel.min.js"></script>
-        <script src="../../../public/js/plugins.js"></script>
-        <script src="../../../public/js/main.js"></script>
-    </body>
-</html>
+@endsection
