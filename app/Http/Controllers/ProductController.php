@@ -171,7 +171,12 @@ class ProductController extends Controller
 
         $order->phone =$request->phone;
 
-        $order->save();
+        if($order->save())
+        {
+            \Cart::clear();
+
+            return back();
+        }
 
         return back();
 
