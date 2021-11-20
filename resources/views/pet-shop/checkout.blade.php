@@ -10,6 +10,15 @@
 @endsection
 
 @section('content')
+    @if($messageSuccessOrder)
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{$messageSuccessOrder}}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
+
         <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(../../../public/img/banner/banner-2.jpg);">
             <div class="container">
                 <div class="breadcrumb-content text-center">

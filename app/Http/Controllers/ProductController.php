@@ -126,8 +126,6 @@ class ProductController extends Controller
     //    тест подкл. checkout
     public function checkout()
     {
-//        $products = Product::query()->limit(3)->offset(1)->get();
-
         $user = Auth::user();
 
         $sessionId = Session::getId();
@@ -140,12 +138,24 @@ class ProductController extends Controller
 
         $sum = \Cart::getTotal('price');
 
+        $messageSuccessOrder =\session('successOrder');
+
+        if (!empty($messageSuccessOrder))
+
+        {
+            return view('pet-shop/checkout', [
+                'cart' => $cart,
+                'sum' => $sum,
+                'user' => $user
+            ])->with('messageSuccessOrder', $messageSuccessOrder);
+        }
+
         return view('pet-shop/checkout', [
 //            'products' => $products,
             'cart' => $cart,
             'sum' => $sum,
             'user' => $user
-        ]);
+        ])->with('messageSuccessOrder', $messageSuccessOrder);
     }
     public function makeOrder(Request $request)
     {
@@ -175,8 +185,12 @@ class ProductController extends Controller
         {
             \Cart::clear();
 
+            Session::flash('successOrder', 'Order created successfully');
+
             return back();
         }
+
+        Session::flash('errorOrder', 'something went wrong');
 
         return back();
 
