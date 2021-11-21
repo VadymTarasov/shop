@@ -14,6 +14,20 @@ class Orders extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
+            $table->integer('id')->index()->autoIncrement();
+            $table->integer('user_id')->index();
+            $table->longText('cart_data');
+            $table->string('address');
+            $table->float('total_sum');
+            $table->string('phone');
+            $table->timestamps();
+
+            $table->primary('id');
+        });
+    }
+
+   /* { мой вариант
+        Schema::create('orders', function (Blueprint $table) {
             $table->string('id')->index();
             $table->longText('cart_data');
             $table->float('total_sum');
@@ -22,7 +36,7 @@ class Orders extends Migration
 
             $table->primary('id');
         });
-    }
+    }*/
 
     /**
      * Reverse the migrations.
