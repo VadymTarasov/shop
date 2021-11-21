@@ -45,17 +45,6 @@ class ProductController extends Controller
 
         $sum = \Cart::getTotal('price');
 
-
-
-
-//        $sessionId = Session::getId();
-
-//        \Cart::session($sessionId);
-
-//        $cart = \Cart::getContent();
-
-//        $sum = \Cart::getTotal('price');
-
         return view('pet-shop/index', [
             'randProducts' => $randProducts,
             'product' => $product,
@@ -64,24 +53,50 @@ class ProductController extends Controller
             ]);
     }
 
+
     public function productDetails(Request $request)
     {
         $product = Product::query()->where(['id' => $request->id])->get();
 
-//        $sessionId = Session::getId();
+        $sessionId = Session::getId();
 
-//        \Cart::session($sessionId);
+        \Cart::session($sessionId);
 
-//        $cart = \Cart::getContent();
+        $cart = \Cart::getContent();
 
-//        $sum = \Cart::getTotal('price');
+        $sum = \Cart::getTotal('price');
 
         return view('pet-shop/product-details', [
             'product' => $product,
-//            'cart' => $cart,
-//            'sum' => $sum,
-            ]);
+            'cart' => $cart,
+            'sum' => $sum,
+        ]);
     }
+
+
+
+    /*
+        мой вариант
+        public function productDetails(Request $request)
+        {
+            $product = Product::query()->where(['id' => $request->id])->get();
+
+    //        $sessionId = Session::getId();
+
+    //        \Cart::session($sessionId);
+
+    //        $cart = \Cart::getContent();
+
+    //        $sum = \Cart::getTotal('price');
+
+            return view('pet-shop/product-details', [
+                'product' => $product,
+    //            'cart' => $cart,
+    //            'sum' => $sum,
+                ]);
+        }
+        */
+
     //корзина
     public function addCart(Request $request)
     {
@@ -104,10 +119,28 @@ class ProductController extends Controller
 
         return redirect()->back();
     }
+
+    public function contact()
+    {
+        $sessionId = Session::getId();
+
+        \Cart::session($sessionId);
+
+        $cart = \Cart::getContent();
+
+        $sum = \Cart::getTotal('price');
+
+        return view('pet-shop/contact', [
+            'cart' => $cart,
+            'sum' => $sum,
+        ]);
+    }
+
+
+
 //    тест подкл. профиля
     public function profile()
     {
-//        $products = Product::query()->limit(3)->offset(1)->get();
 
         $sessionId = Session::getId();
 
@@ -118,11 +151,11 @@ class ProductController extends Controller
         $sum = \Cart::getTotal('price');
 
         return view('pet-shop/my-account', [
-//            'products' => $products,
             'cart' => $cart,
             'sum' => $sum,
         ]);
     }
+
     //    тест подкл. checkout
     public function checkout()
     {
@@ -139,22 +172,33 @@ class ProductController extends Controller
         $sum = \Cart::getTotal('price');
 
         $messageSuccessOrder =\session('successOrder');
+//        getAuthIdentifier выводит id
+        $orders = Order::query()->where(['user_id' => $user->getAuthIdentifier()])
+
+            ->orderBy('id','desc')->get();
+
+        $orders->transform(function ($order) {
+            $order->cart_data = unserialize($order->cart_data); /*преобразовался в массив*/
+//            dd($order->cart_data);
+
+            return $order;
+        });
 
         if (!empty($messageSuccessOrder))
-
         {
             return view('pet-shop/checkout', [
                 'cart' => $cart,
                 'sum' => $sum,
-                'user' => $user
+                'user' => $user,
+                'orders'=>$orders,
             ])->with('messageSuccessOrder', $messageSuccessOrder);
         }
 
         return view('pet-shop/checkout', [
-//            'products' => $products,
             'cart' => $cart,
             'sum' => $sum,
-            'user' => $user
+            'user' => $user,
+            'orders'=>$orders,
         ])->with('messageSuccessOrder', $messageSuccessOrder);
     }
     public function makeOrder(Request $request)
@@ -173,13 +217,13 @@ class ProductController extends Controller
 
         $order->user_id = $user->id;
 
-        $order->cart_data = $order->getCartDataAttribute($cart);
+        $order->cart_data = $order->setCartDataAttribute($cart);
 
         $order->total_sum = $sum;
 
         $order->address = $request->address . ' ' . $request->city .' ' . $request->post;
 
-        $order->phone =$request->phone;
+        $order->phone = $request->phone;
 
         if($order->save())
         {
