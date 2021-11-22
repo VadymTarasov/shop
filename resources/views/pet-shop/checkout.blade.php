@@ -178,33 +178,33 @@
                                                                 </tr>
                                                             </thead>
                                                             {{--так как массив лежит в массиве вызываем новый --}}
-{{--                                                            @foreach($order->cart_data as $cart_data)--}}
+                                                            @foreach($order->cart_data as $cart_data)
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
                                                                         <div class="o-pro-dec">
-{{--                                                                            <p>{{$cart_data['name']}}</p>--}}
+                                                                            <p>{{$cart_data['name']}}</p>
                                                                         </div>
                                                                     </td>
                                                                     <td>
                                                                         <div class="o-pro-price">
-{{--                                                                            <p>${{$cart_data['price']}}</p>--}}
+                                                                            <p>${{$cart_data['price']}}</p>
                                                                         </div>
                                                                     </td>
                                                                     <td>
                                                                         <div class="o-pro-qty">
-{{--                                                                            <p>{{$cart_data['quantity']}}</p>--}}
+                                                                            <p>{{$cart_data['quantity']}}</p>
                                                                         </div>
                                                                     </td>
                                                                     <td>
                                                                         <div class="o-pro-subtotal">
-{{--                                                                            <p>${{$cart_data['price'] * $cart_data['quantity']}}</p>--}}
+                                                                            <p>${{$cart_data['price'] * $cart_data['quantity']}}</p>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
 
                                                             </tbody>
-{{--                                                            @endforeach--}}
+                                                            @endforeach
                                                             <tfoot>
                                                                 <tr>
                                                                     <td colspan="3">Grand Total</td>

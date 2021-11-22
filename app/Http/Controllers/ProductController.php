@@ -176,10 +176,11 @@ class ProductController extends Controller
         $orders = Order::query()->where(['user_id' => $user->getAuthIdentifier()])
 
             ->orderBy('id','desc')->get();
+//        dd($orders);
 
         $orders->transform(function ($order) {
             $order->cart_data = unserialize($order->cart_data); /*преобразовался в массив*/
-//            dd($order->cart_data);
+/*            dd($order->cart_data);*/
 
             return $order;
         });
