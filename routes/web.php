@@ -28,6 +28,9 @@ Route::get('pet-shop/contact', function (){
 Route::get('pet-shop/contact', [\App\Http\Controllers\ProductController::class, 'contact'])
     ->name('pet-shop/contact');
 
+/*test*//*нужно contact испрать */
+Route::get('pet-shop/product-details', [\App\Http\Controllers\ProductController::class, 'contact'])
+    ->name('pet-shop/product-details');
 
 Route::get('pet-shop/about-us',[\App\Http\Controllers\PetController::class, 'about'])
     ->name('pet-shop/about-us');

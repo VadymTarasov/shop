@@ -20,7 +20,7 @@
                                     <h3 class="animated">We keep pets for pleasure.</h3>
                                     <h1 class="animated">Food & Vitamins <br>For all Pets</h1>
                                     <div class="slider-btn">
-                                        <a class="animated" href="product-details.blade.php">SHOP NOW</a>
+                                        <a class="animated" href="{{route('pet-shop/product-details')}}">SHOP NOW</a>
                                     </div>
                                 </div>
                             </div>
